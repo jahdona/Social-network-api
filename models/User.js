@@ -21,7 +21,7 @@ const userSchema = new Schema({
     friends:[
         {
             type:Schema.Types.ObjectId,
-            ref:"user",
+            ref:"users",
         },
     ],
 
@@ -34,9 +34,9 @@ const userSchema = new Schema({
 }
 );
 //Increases friends count in user model object when friends are added by a user
-userSchema.virtual("freindCount").get(function(){
+userSchema.virtual("friendCount").get(function(){
     return this.friends.length;
 });
 //create user model
-const User = model("user",userSchema);
+const User = model("users",userSchema);
 module.exports = User;
