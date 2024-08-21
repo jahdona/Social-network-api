@@ -60,5 +60,38 @@ const userController = {
             console.log(error);
             return res.status(500).json(error);
         }
-    }
+    },
+    //delete user and associated thought and reactions
+    async deleteUSer( req, res){
+        try {
+            const user = await User.findOneAndDelete({ _id:req.params.userId});
+            if(!user){
+                return res.status(400).json({message:"No user found of this id!"});
+            }
+            await Thought.deleteMany({_id:{ $in:user.thoughts } });
+            return res.status(200).json({ message: "User and associated thoughts and reactions was deleted!"})
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json(error);
+            
+        }
+    },
+    //add friend
+    async addFriend( req, res ){
+        try {
+            const friend = await User.findOneAndUpdate(
+                { _id: req.params.userId},
+                { $addToSet: { friends: req.params.friendId } },
+                { runValidators:true, new: true}
+            );
+            if(!friend){
+                return res.status(400).json({ message: "No user  found with that Id"});
+            }
+            return res.status(200).json(friend);
+        } catch (error) {
+            console.log(error);
+            return res.status(500).json(error);
+        }
+    },
 }
+ module.exports = userController
