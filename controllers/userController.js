@@ -34,7 +34,7 @@ const userController = {
         }
     },
     //create user
-    async creatUser( req,res ){
+    async createUser( req,res ){
         try {
             const user = await User.create(req.body);
             return res.status(200).json(user);
