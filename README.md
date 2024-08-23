@@ -40,13 +40,14 @@ With the exception of the challenges faced, I did learn yet another powerful too
 
 ## Live Screen Recording of Application Functionality
 
-https://drive.google.com/file/d/1pioIILUrqjeEg_HnsBBjwchSox0L-EU7/view
+https://drive.google.com/file/d/1iRASLAXB_8oob-3GbAcJPCAhtq4AEZZ-/view?usp=sharing
 
 ## Screenshots
 
-![Screenshot1-week-18-challenge](https://github.com/rmessett15/Social-Network-API/assets/120127903/7336192b-6af2-4a8f-8a87-06212c8d46ad)
+![Screenshot1-week-18-challenge](./assets/starting%20the%20server.png)
+![Screenshot2-week-18-challenge](./assets/creating%20a%20thought.png)
 
-![Screenshot2-week-18-challenge](https://github.com/rmessett15/Social-Network-API/assets/120127903/93900a36-ecb1-4d4e-8d65-4549416d5493)
+![Screenshot3-week-18-challenge](./assets/adding%20friends%20to%20a%20user.png)
 
 ## Technologies Used
 
@@ -64,7 +65,7 @@ This application is powered by Node.js (v16.19.1), Express.js (v.14.18.2), JavaS
 ## Installation
 
 1. Clone the repo:
-   git clone https://github.com/rmessett15/Social-Network-API.git
+   git clone git@github.com:jahdona/Social-network-api.git
 
 2. Open in VS Code. If you do not have VS code you must install it.
 
@@ -89,7 +90,7 @@ This application is powered by Node.js (v16.19.1), Express.js (v.14.18.2), JavaS
 
 ## Credits
 
-The general structuring of routes and file organization followed much of the week-18 mini challenge. I worked with a tutor, Mila Hose who also helped me establish the general formatting of my controller files and my route files. Also Elizabeth Olsavsky, another student in the cohort helped me debug my createThought route, allowing me to add each thought to the thought array associated with each user.
+The general structuring of routes and file organization followed much of the week-18 mini challenge. I worked with a tutor, Jung who also helped me to overcome the challenge I got when I forgot to write codes for index in model and fail to seed.
 
 ## Features
 
@@ -101,7 +102,6 @@ As of now the usage of this application can be conducted through spinning up the
 
 ## Suggested Future Development
 
-- Add additional seed data with the node package manager faker-js
 - Continue development of additional routes adding likes or up-votes
 - Create a front-end UI that will enable users to interact with the application in a cohesive and intuitive way
 - Include unit testing with Jest
@@ -124,6 +124,6 @@ NOTICE: This application is covered under the MIT License
 
 Have additional questions? Click the links below to reach me through my GitHub account or Email address.
 
-[Link to Github](https://github.com/rmessett15)
+[Link to Github](https://github.com/jahdona/)
 
-<a href="mailto:rmessett15@gmail.com">rmessett15@gmail.com</a>
+<a href="mailto:jahdonah7@gmail.com">jahdonah7@gmail.com</a>
