@@ -40,7 +40,7 @@ With the exception of the challenges faced, I did learn yet another powerful too
 
 ## Live Screen Recording of Application Functionality
 
-https://drive.google.com/file/d/1iRASLAXB_8oob-3GbAcJPCAhtq4AEZZ-/view?usp=sharing
+https://drive.google.com/file/d/1iRASLAXB_8oob-3GbAcJPCAhtq4AEZZ-/view?usp=drive_link
 
 ## Screenshots
 
